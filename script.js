@@ -61,7 +61,7 @@ $('#contactUsForm').validate(
     $.validator.addMethod("validUserEmail", function(value)
     {
         value=value.trim();
-        var regEmail = /^([a-zA-Z])([\-\.0-9a-zA-Z])+@([\-\.0-9a-zA-Z])+\.([a-zA-Z]){2,7}$/i;
+        var regEmail = /^([a-zA-Z])([\-_.0-9a-zA-Z])+@([\-_.0-9a-zA-Z])+\.([a-zA-Z]){2,3}$/i;
         var validEmailID=regEmail.test(value); 
         return validEmailID;
     },"Please Enter valid Email Address");
